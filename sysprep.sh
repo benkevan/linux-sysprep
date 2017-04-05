@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # sysprep.sh - Prepare machine for use as template
 #
 # This script was designed to be compatible with all Linux systems with a
@@ -7,7 +7,7 @@
 usage() {
 	cat 1>&2 <<EOF
 Usage $0 [OPTIONS]
-Prepare system for use as template.
+Prepare system for use as a template.
 
   -f            Actually do something, don't just say it
   -h            Print this help message
@@ -140,4 +140,3 @@ write_file() {
 
 main "$@"
 exit 0
-
